@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recursos Multimídia — Cap. 4 / Ativ. 4</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Recursos Multimídia</h1>
+    </header>
+
+    <main>
+
+        <figure>
+
+            <video controls width="800" height="450" poster="poster-aula.jpg" preload="metadata">
+
+                <source src="video/aula.mp4" type="video/mp4">
+
+                <source src="video/aula.webm" type="video/webm">
+
+                <track
+                    src="legendas/aula-html.vtt"
+                    kind="subtitles"
+                    srclang="pt"
+                    label="Português"
+                    default>
+
+                <p>
+                    Seu navegador não suporta vídeo.
+                    <a href="video/aula.mp4">
+                        Baixar vídeo
+                    </a>
+                </p>
+
+            </video>
+
+            <figcaption>
+                Vídeo sobre HTML.
+            </figcaption>
+
+        </figure>
+
+        <br>
+
+        <figure>
+
+            <audio controls preload="metadata">
+
+                <source src="audio/podcast.mp3" type="audio/mpeg">
+
+                <source src="audio/podcast.ogg" type="audio/ogg">
+
+                <p>
+                    Seu navegador não suporta áudio.
+                    <a href="audio/podcast.mp3">
+                        Baixar áudio
+                    </a>
+                </p>
+
+            </audio>
+
+            <figcaption>
+                Podcast sobre programação.
+                <a href="transcricao.html">
+                    Ver transcrição
+                </a>
+            </figcaption>
+
+        </figure>
+
+        <br>
+
+        <figure>
+
+            <iframe
+                width="800"
+                height="450"
+                src="https://www.youtube-nocookie.com/embed/3oSIqIqzN3M"
+                title="Vídeo sobre HTML"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+
+            </iframe>
+
+            <figcaption>
+                Vídeo do YouTube sobre HTML.
+            </figcaption>
+
+        </figure>
+
+        <br>
+
+        <figure>
+
+            <picture>
+
+                <source
+                    media="(min-width: 768px)"
+                    srcset="img/banner-wide.jpg">
+
+                <img
+                    src="img/banner-mobile.jpg"
+                    alt="Imagem de programação"
+                    width="600"
+                    height="300">
+
+            </picture>
+
+            <figcaption>
+                Banner de programação.
+            </figcaption>
+
+        </figure>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Nome: Laynara Ramos
+        </p>
+
+        <p>
+            Data: 2026
+        </p>
+
+    </footer>
+
+    <br>
+
+    <a href="../index.html">
+        Voltar
+    </a>
+
+</body>
+
+</html>
