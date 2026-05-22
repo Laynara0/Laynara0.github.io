@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWEB1 - Cap. 05 - AT05 - Pesquisa Acadêmica</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>AT05 - Formulário de Pesquisa Acadêmica</h1>
+    <p><a href="../index.html">← Voltar para a página principal</a></p>
+  </header>
+  
+  <main>
+    <p>* Campos obrigatórios</p>
+    <form action="https://httpbin.org/post" method="post" novalidate>
+      
+      <fieldset>
+
+        <legend>Perfil do estudante</legend>
+
+        <div>
+          <label for="nome">Nome completo *:</label>
+          <input type="text" id="nome" name="nome" aria-required="true" autocomplete="name" />
+        </div>
+
+        <div>
+          <label for="matricula">Matrícula *:</label>
+          <input type="text" id="matricula" name="matricula" pattern="\d{7}" aria-required="true" aria-describedby="instrucao-matricula" />
+          <br />
+          <small id="instrucao-matricula">A matrícula deve conter exatamente 7 dígitos numéricos.</small>
+        </div>
+
+        <div>
+          <label for="email">E-mail institucional: <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" aria-required="true" aria-invalid="false" aria-describedby="erro-email" onblur="validarEmail(this)" autocomplete="email" />
+          <p id="erro-email" role="alert"></p>
+        </div>
+
+        <div>
+          <label for="periodo">Período atual *:</label>
+          <select id="periodo" name="periodo" aria-required="true">
+            <option value="">Selecione o período...</option>
+            <option value="1">1º Período</option>
+            <option value="2">2º Período</option>
+            <option value="3">3º Período</option>
+            <option value="4">4º Período</option>
+            <option value="5">5º Período</option>
+            <option value="6">6º Período</option>
+            <option value="7">7º Período</option>
+            <option value="8">8º Período</option>
+          </select>
+        </div>
+
+        <fieldset>
+
+          <legend>Turno *</legend>
+
+          <div>
+            <input type="radio" id="manha" name="turno" value="Manhã" />
+            <label for="manha">Manhã</label>
+          </div>
+
+          <div>
+            <input type="radio" id="tarde" name="turno" value="Tarde" />
+            <label for="tarde">Tarde</label>
+          </div>
+
+          <div>
+            <input type="radio" id="noite" name="turno" value="Noite" />
+            <label for="noite">Noite</label>
+          </div>
+
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Perfil tecnológico</legend>
+
+        <fieldset>
+
+          <legend>Tecnologias que conhece</legend>
+
+          <div>
+            <input type="checkbox" id="tech_html" name="tecnologias[]" value="HTML" />
+            <label for="tech_html">HTML</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="tech_css" name="tecnologias[]" value="CSS" />
+            <label for="tech_css">CSS</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="tech_js" name="tecnologias[]" value="JavaScript" />
+            <label for="tech_js">JavaScript</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="tech_php" name="tecnologias[]" value="PHP" />
+            <label for="tech_php">PHP</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="tech_python" name="tecnologias[]" value="Python" />
+            <label for="tech_python">Python</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="tech_java" name="tecnologias[]" value="Java" />
+            <label for="tech_java">Java</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="tech_sql" name="tecnologias[]" value="SQL" />
+            <label for="tech_sql">SQL</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="tech_git" name="tecnologias[]" value="Git" />
+            <label for="tech_git">Git</label>
+          </div>
+
+        </fieldset>
+
+        <div>
+          <label for="linguagem_favorita">Linguagem de programação favorita:</label>
+          <select id="linguagem_favorita" name="linguagem_favorita">
+            <option value="">Selecione uma linguagem...</option>
+            <optgroup label="Estruturado/Imperativo">
+              <option value="c">C</option>
+            </optgroup>
+            <optgroup label="Orientado a Objetos">
+              <option value="java">Java</option>
+              <option value="csharp">C#</option>
+            </optgroup>
+            <optgroup label="Multiparadigma">
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div>
+          <label for="anos_experiencia">Anos de experiência com programação:</label>
+          <input type="number" id="anos_experiencia" name="anos_experiencia" min="0" max="30" />
+        </div>
+
+        <div>
+          <label for="portfolio">URL do portfólio ou LinkedIn:</label>
+          <input type="url" id="portfolio" name="portfolio" placeholder="https://" />
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Avaliação da disciplina</legend>
+
+        <div>
+          <label for="nota">
+            Nota para a disciplina: <span id="valor-nota">5</span>/10
+          </label>
+          <input type="range" id="nota" name="nota" min="0" max="10" oninput="document.getElementById('valor-nota').textContent = this.value" />
+        </div>
+        
+        <fieldset
