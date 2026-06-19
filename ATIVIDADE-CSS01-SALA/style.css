@@ -8,11 +8,11 @@ body {
 
 .container {
     max-width: 900px;
-    margin: 40px auto; /* margens */
-    padding: 20px; /* espaçamento interno */
+    margin: 40px auto;
+    padding: 20px; 
     background-color: #ffffff;
-    border: 2px solid #ff99cc; /* borda */
-    border-radius: 15px; /* cantos arredondados */
+    border: 2px solid #ff99cc; 
+    border-radius: 15px;
 }
 
 h1, h2 {
@@ -23,7 +23,7 @@ h1, h2 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* espaçamento entre os elementos */
+    gap: 12px;
 }
 
 input, select, textarea {
