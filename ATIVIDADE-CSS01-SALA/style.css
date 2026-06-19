@@ -1,7 +1,7 @@
 body {
-    background-color: #ffe6f0; /* cor de fundo (rosa bebê) */
-    color: #333333; /* cor do texto */
-    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif; /* fonte personalizada sem Google */
+    background-color: #ffe6f0; 
+    color: #333333;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
