@@ -1,122 +1,119 @@
+x.html
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana de Inovação e Tecnologia — IFAL</title>
+  <!--
+    ATENÇÃO: este arquivo HTML NÃO deve ser modificado.
+    Toda a atividade é resolvida exclusivamente no arquivo atv01.css.
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  
-  <center>
-  <h1>Laynara Ramos da Silva</h1>
-  </center>
 
-  <img src="perfil.jpg" 
- style="width: 280px; height: auto; max-width: 100%; display: block; margin: 0 auto;">
-  
-  <h2>Biografia de Laynara R.</h2>
-  <h4>Nome:Laynara Ramos da Silva</h4>
-  <h4>Idade:15 anos</h4>
-  <h4>Data de nascimento:27/08/2010</h4>
-  <h4>Mãe:Silvania Firmo</h4>
-  <h4>Pai:Rejanilson Ramos</h4>
-  
-  <center>
-    <h1>Fatos!</h1>
-  </center>
-  
-  <h4>Cursa des. de sistema no IFAl campus maceío</h4>
-  <a href="https://www2.ifal.edu.br"
-    target="_blank">Abrir site IFAL.</a>
-    
-  
-  <h5>Laynara Ramos, é evangélica da Igreja Batista
-    da Mata do Rolo(IBMR).</h5>
-  <h5> Mora com seus pais e sua irmã em AL.Rio largo.</h5>
-  
-  <p>📍 Rio Largo - AL, Brasil</p>
+  <header class="cabecalho">
+    <h1>Semana de Inovação e Tecnologia</h1>
+    <p class="subtitulo">Instituto Federal de Alagoas — Campus Maceió</p>
+    <nav class="menu">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#trilhas">Trilhas</a></li>
+        <li><a href="#programacao">Programação</a></li>
+        <li><a href="#inscricao">Inscrição</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<iframe 
-src="https://www.google.com/maps?q=Rio+Largo+AL&output=embed"
-width="100%" 
-height="200"
-style="border-radius:10px;">
-</iframe>
-  
-  <h5>Tem 1.58.</h5>
-  <h5>Laynara é Ambidestra, isso significa que ela faz parte de uma pequena parte da população que é ambidetro pela treinamento. Resumindo, seguindo a ciência, Laynara nasceu canhota, mas como a maioria das pessoas são destras é normal que os pais ensinem as crianças a escreverem com essa mão, e assim os canhotos aprendem por costume. </h5>
-  
-  <center>
-  <h1> Curiosidades!!</h1>
-   </center>
-  
-  <h4>Toca o básico de teclado.</h4>
-  <h4>Está aprendendo violão.</h4>
-  <h4>Gosta de cantar(desde pequena).</h4>
-  <style>
-  
-  p{
-    background-color:#ffd1dc
-  }
-  
-  </style>
-  
-  </style>
-  
-  <style>
-  
-  h2{
-     background-color:#ffd1dc
-  }
-  </style>
-  
-  <style>
-  
-  h4{
-    background-color:#ffe4e1
-  }
-  </style>
-  
-<style>
-  
- h5{
-    background-color: #ffe4e1;
-}
+  <main>
 
-</style>
+    <section id="sobre" class="secao">
+      <h2>Sobre o evento</h2>
+      <p>A Semana de Inovação e Tecnologia reúne estudantes, docentes e profissionais em torno de palestras, oficinas e maratonas de desenvolvimento.</p>
+      <p>São cinco dias de atividades gratuitas, distribuídas em quatro trilhas temáticas.</p>
+      <p class="destaque">As inscrições são limitadas e encerram na sexta-feira anterior ao evento.</p>
+    </section>
 
-  <style>
-h1 { 
-    color: #ff69b4;
-}
-</style>
-  
-  <section>
-  <h2>Capítulo 4</h2>
+    <section id="trilhas" class="secao">
+      <h2>Trilhas temáticas</h2>
+      <div class="grade">
+        <article class="cartao">
+          <h3>Desenvolvimento Web</h3>
+          <p>Fundamentos de HTML, CSS e JavaScript aplicados à construção de interfaces.</p>
+          <a href="#inscricao" class="botao">Inscrever-se</a>
+        </article>
+        <article class="cartao">
+          <h3>Ciência de Dados</h3>
+          <p>Coleta, tratamento e visualização de dados com ferramentas livres.</p>
+          <a href="#inscricao" class="botao">Inscrever-se</a>
+        </article>
+        <article class="cartao">
+          <h3>Internet das Coisas</h3>
+          <p>Prototipagem de dispositivos conectados com microcontroladores.</p>
+          <a href="#inscricao" class="botao">Inscrever-se</a>
+        </article>
+        <article class="cartao">
+          <h3>Segurança da Informação</h3>
+          <p>Princípios de proteção de sistemas, redes e dados pessoais.</p>
+          <a href="#inscricao" class="botao">Inscrever-se</a>
+        </article>
+      </div>
+    </section>
 
-  <ul>
-    <li><a href="cap04/at01.html">Atividade 1</a></li>
-    <li><a href="cap04/at02.html">Atividade 2</a></li>
-    <li><a href="cap04/at03.html">Atividade 3</a></li>
-    <li><a href="cap04/at04.html">Atividade 4</a></li>
-  </ul>
-</section>
+    <section id="programacao" class="secao">
+      <h2>Programação por dia</h2>
+      <ul class="lista-dias">
+        <li>Segunda-feira — Abertura
+          <ul>
+            <li>Credenciamento</li>
+            <li>Palestra de abertura</li>
+          </ul>
+        </li>
+        <li>Terça-feira — Oficinas
+          <ul>
+            <li>Oficina de HTML semântico</li>
+            <li>Oficina de CSS responsivo</li>
+          </ul>
+        </li>
+        <li>Quarta-feira — Maratona
+          <ul>
+            <li>Formação de equipes</li>
+            <li>Desenvolvimento orientado</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-<section>
-  <h2>Capítulo 5</h2>
+    <section id="inscricao" class="secao">
+      <h2>Inscrição</h2>
+      <p>Preencha os dados abaixo para garantir sua vaga.</p>
+      <form class="formulario">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome">
 
-  <ul>
-    <li><a href="cap05/at01.html">Atividade 1</a></li>
-    <li><a href="cap05/at02.html">Atividade 2</a></li>
-    <li><a href="cap05/at03.html">Atividade 3</a></li>
-    <li><a href="cap05/at04.html">Atividade 4</a></li>
-    <li><a href="cap05/at05.html">Atividade 5</a></li>
-  </ul>
-</section>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
 
-  <section>
-    <h2>Atividade css01</h2>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone">
 
-    <ul>
-      <li><a href="ATIVIDADE-CSS01-SALA/index.html">ATIVIDADE-CSS01-SALA</a></li>
-    </ul>
-    
-  </section>
-  
+        <label for="senha">Senha de acesso</label>
+        <input type="password" id="senha" name="senha">
+
+        <label for="mensagem">Observações</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+        <button type="submit">Enviar inscrição</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Semana de Inovação e Tecnologia — IFAL, Campus Maceió.</p>
+    <p>Contato: eventos@ifal.edu.br</p>
+  </footer>
+
 </body>
 </html>
