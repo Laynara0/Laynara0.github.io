@@ -1,6 +1,10 @@
-/*===========================rem é relativo ao tamanho da fonte do elemento raiz, garantindo consistência tipográfica.
-em é relativo ao tamanho da fonte do próprio elemento, idael para espaços insternos proporcionais.
-% depende do elemento pai e é indicado para layouts flexíveis e responsivos.========================*\
+/* ==========================================================
+Reflexão:
+rem é baseado na fonte raiz e é ideal para tipografia.
+em depende da fonte do próprio elemento, sendo útil para
+espaçamentos. % depende do elemento pai e é indicada para
+layouts responsivos, adaptando-se ao zoom e ao redimensionamento.
+========================================================== */
 
 /* ---------- Base ---------- */
 body {
@@ -50,6 +54,10 @@ h1 {
   color: #bbdefb;
 }
 
+.menu a::before {
+  content: "› ";
+}
+
 /* ---------- Seções ---------- */
 .secao {
   padding: 2rem;
@@ -97,12 +105,19 @@ p {
   margin: 0.5em;
 }
 
+/* :nth-child() permite estilizar elementos pela posição,
+sem precisar adicionar classes ao HTML. */
+
+.cartao:nth-child(odd){
+  background-color: #ffffff;
+}
+
 .cartao:nth-child(even){
   background-color: #f9f9f9;
 }
 
 .cartao:not(:last-child){
-  border-bottom: 2px solid #ccc;
+  margin-bottom: 1em;
 }
 
 .botao {
@@ -115,8 +130,11 @@ p {
   margin-top: 0.5em;
 }
 
+/* Esta regra prevalece porque possui maior especificidade,
+sem necessidade de usar !important. */
+
 .secao .botao {
-  background-color: #1565c0;
+  background-color: #0d47a1;
 }
 
 .botao:hover {
@@ -128,6 +146,9 @@ p {
   font-size: 1rem;
   line-height: 1.75;
 }
+
+/* O seletor > seleciona apenas os filhos diretos.
+Já o espaço seleciona todos os descendentes. */
 
 .lista-dias > li {
   font-weight: 500;
