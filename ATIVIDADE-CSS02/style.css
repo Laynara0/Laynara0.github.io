@@ -1,3 +1,7 @@
+/*===========================rem é relativo ao tamanho da fonte do elemento raiz, garantindo consistência tipográfica.
+em é relativo ao tamanho da fonte do próprio elemento, idael para espaços insternos proporcionais.
+% depende do elemento pai e é indicado para layouts flexíveis e responsivos.========================*\
+
 /* ---------- Base ---------- */
 body {
   font-family: Arial, Helvetica, sans-serif;
