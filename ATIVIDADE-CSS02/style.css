@@ -150,8 +150,8 @@ sem necessidade de usar !important. */
 /* O seletor > seleciona apenas os filhos diretos.
 Já o espaço seleciona todos os descendentes. */
 
-.lista-dias > li {
-  font-weight: 500;
+.lista-dias > li: {
+  font-weight: bold;
 }
 
 .lista-dias > li:first-child {
