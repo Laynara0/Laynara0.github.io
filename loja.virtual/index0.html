@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Lumière Skin Co.</title>
 </head>
 
 <body>
@@ -14,10 +15,10 @@ Frete grátis acima de R$ 199
 </div>
 
 <div class="container">
-  
+ 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container">
-<a class="navbar-brand" href="#">Minha Loja</a>
+<a class="navbar-brand fw-bold" href="#">Lumière Skin Co.</a>
 
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 
@@ -46,7 +47,7 @@ Frete grátis acima de R$ 199
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner"> 
+    <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://i.pinimg.com/736x/41/9e/d2/419ed251befa98d03c80d23d64fe5b02.jpg" class="d-block w-100"
           alt="foto1">
@@ -164,28 +165,98 @@ Frete grátis acima de R$ 199
     </div>
 
 </div>
-```
 
+  <div class="row g-3 mt-2">
+      <div class="col-md-6">
+          <img src="imagens/banner.png" class="img-fluid w-100" alt="Banner de produto">
+      </div>
+      <div class="col-md-6">
+          <img src="imagens/banner0.png" class="img-fluid w-100" alt="Banner de produto">
+      </div>
+  </div>
 
-<div class="row g-3">
+  <div class="row text-center g-3 my-5">
+      <div class="col-md-4 d-flex align-items-center justify-content-center gap-2">
+          <div class="border rounded-circle p-3 bg-light"><i class="bi bi-truck fs-4 text-primary"></i></div>
+          <span>Entrega para todo o Brasil</span>
+      </div>
+      <div class="col-md-4 d-flex align-items-center justify-content-center gap-2">
+          <div class="border rounded-circle p-3 bg-light"><i class="bi bi-shield-check fs-4 text-primary"></i></div>
+          <span>Pagamento seguro</span>
+      </div>
+      <div class="col-md-4 d-flex align-items-center justify-content-center gap-2">
+          <div class="border rounded-circle p-3 bg-light"><i class="bi bi-arrow-counterclockwise fs-4 text-primary"></i></div>
+          <span>Troca grátis em 30 dias</span>
+      </div>
+  </div>
 
-    <div class="col-md-6">
-        <img src="imagens/banner.png" class="img-fluid w-100" alt="Banner de produto">
+  <div class="text-center my-5">
+      <h4 class="mb-3">Receba nossas ofertas</h4>
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="seu e-mail">
+                  <button class="btn btn-secondary">Assinar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+<footer class="bg-light pt-4 pb-3 border-top">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3 col-12">
+                <h5>Institucional</h5>
+                <ul class="list-unstyled text-muted small">
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-muted">Sobre nós</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-muted">Política de privacidade</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-muted">Termos e condições</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-12">
+                <h5>Ajuda</h5>
+                <ul class="list-unstyled text-muted small">
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-muted">Central de atendimento</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-muted">Trocas e devoluções</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-muted">Perguntas frequentes (FAQ)</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-12">
+                <h5>Redes sociais</h5>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <a href="https://instagram.com" target="_blank" class="text-dark text-decoration-none border rounded-circle p-2 bg-white d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                        <i class="bi bi-instagram fs-5"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="text-dark text-decoration-none border rounded-circle p-2 bg-white d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                        <i class="bi bi-facebook fs-5"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="text-dark text-decoration-none border rounded-circle p-2 bg-white d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                        <i class="bi bi-tiktok fs-5"></i>
+                    </a>
+                </div>
+                <small class="text-muted"><i class="bi bi-instagram me-1"></i>@lumiereskin.co</small>
+            </div>
+
+            <div class="col-md-3 col-12">
+                <h5>Formas de pagamento</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="border rounded-pill px-3 py-1 bg-white text-dark small fw-medium">Pix</span>
+                    <span class="border rounded-pill px-3 py-1 bg-white text-dark small fw-medium">Bradesco</span>
+                    <span class="border rounded-pill px-3 py-1 bg-white text-dark small fw-medium">Visa</span>
+                    <span class="border rounded-pill px-3 py-1 bg-white text-dark small fw-medium">Mastercard</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-muted small mt-4 pt-3 border-top">
+            © 2026 Lumière Skin Co. — CNPJ 00.000.000/0000-00
+        </div>
     </div>
-
-    <div class="col-md-6">
-        <img src="imagens/banner0.png" class="img-fluid w-100" alt="Banner de produto">
-    </div>
-
-</div>
-
-
-
-</div>
-
-<!-- carrossel, categorias, destaques, banners, benefícios vão AQUI dentro -->
-</div>
-
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
   </script>
